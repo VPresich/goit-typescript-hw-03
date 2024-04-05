@@ -1,5 +1,9 @@
 class Key {
-  constructor(private signature: number = Math.random()) {}
+  private signature: number;
+
+  constructor() {
+    this.signature = Math.random();
+  }
 
   getSignature(): number {
     return this.signature;
